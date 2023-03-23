@@ -3,10 +3,13 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    font-family: "Roboto", sans-serif;
+}
 .container {
     width: 1140px;
     margin: 0 auto;
+    position: relative;
 }
 
 .promo {
@@ -25,7 +28,6 @@
     font-weight: 500;
     color: white;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 10px;
 }
@@ -36,7 +38,6 @@ h1 {
 
 .title {
     color: #F9BF3B;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 41px;
@@ -45,7 +46,6 @@ h1 {
 }
 
 .simple .title__big {
-    font-family: 'Roboto - Black', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 80px;
@@ -56,7 +56,6 @@ h1 {
 }
 
 .promo .promo__text {
-    font-family: 'Roboto Light', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 21px;
@@ -73,26 +72,26 @@ h1 {
     color: #F9BF3B;
 }
 
-.promo .promo__btn {
+.promo .promo__btn, .gift .gift__btn{
     display: block;
     margin: 50px auto;
     background: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%);
-    width: 313px;
-    height: 72px;
+    min-width: 313px;
+    min-height: 72px;
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
     border: 4px solid rgba(0, 0, 0, 0.23);
     color: #FFFFFF;
     text-transform: uppercase;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
-    font-family: 'Roboto Condensed', sans-serif;
     font-size: 21px;
     font-weight: 400;
     cursor: pointer;
     line-height: 24px;
+    padding: 14px 23px;
 }
+
 .more .more__text {
     color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 15px;
@@ -101,18 +100,20 @@ h1 {
 
 
 }
+
 .more .more__img {
     display: block;
     margin: 4px auto;
     cursor: pointer;
 }
+
 .waiting {
     background: #EFEFEF;
-    height: 607px;
+    min-height: 607px;
     padding: 85px 0 75px 0;
 }
-.waiting .waiting__header {
-    font-family: "Roboto", sans-serif;
+
+.waiting .waiting__header, .finish .finish__header {
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -120,7 +121,12 @@ h1 {
     text-align: center;
     color: #252525;
 }
-.waiting .waiting__divider {
+
+.finish .finish__header {
+    color: #FFFFFF;
+}
+
+.waiting .waiting__divider, .finish .finish__divider {
     width: 220px;
     height: 4px;
     background: #F9BF3B;
@@ -129,7 +135,6 @@ h1 {
 }
 
 .waiting .waiting__subheader {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
@@ -140,24 +145,186 @@ h1 {
 
 .waiting .waiting__wrapper {
     margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
 }
+
 .waiting .waiting__wrapper .waiting__item {
     width: 339px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px 0 15px;
 }
 
 .waiting .waiting__wrapper .waiting__item .waiting__img {
     width: 100%;
 }
+
 .waiting .waiting__wrapper .waiting__item .waiting__description {
     margin-top: 26px;
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
     color: #4A4A4A;
+}
+
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization__header {
+    margin-left: 391px;
+    text-transform: uppercase;
+    color: #299CBD;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+/ / Подправить_до_30
+}
+
+.optimization .optimization__text {
+    margin: 25px 0 0 389px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+
+.optimization .optimization__text span {
+    font-weight: 700;
+}
+
+.optimization .optimization__img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    background: url("/img/bg/second_bg.jpg") center center/cover no-repeat;
+    min-height: 447px;
+    padding: 86px 0 68px 0;
+}
+
+.finish .finish__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+.finish .finish__wrapper .finish__item {
+    width: 204px;
+}
+
+.finish .finish__wrapper .finish__item .finish__round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    background: #B4E2FF;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.finish .finish__wrapper .finish__item .finish__description {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #EFEFEF;
+    margin-top: 25px;
+}
+
+.gift {
+    min-height: 631px;
+    padding: 68px;
+    background: #EFEFEF;
+}
+
+.gift .gift__icon {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.gift .gift__description {
+    text-align: center;
+    color: #252525;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    margin-top: 45px;
+
+}
+
+.firstWeb {
+    min-height: 512px;
+    padding: 88px 0 53px 0;
+}
+
+.firstWeb .firstWeb__icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.firstWeb .firstWeb__header {
+    color: #252525;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 36px;
+}
+
+.firstWeb .firstWeb__time {
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.firstWeb .firstWeb__description {
+    text-align: center;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.contacts {
+    min-height: 166px;
+    background: #1A1A1A;
+    padding: 55px 0 68px 0;
+}
+
+.contacts .contacts__list {
+    text-align: center;
+}
+
+.contacts .contacts__list .contacts__items {
+    list-style: none;
+    display: inline;
+    color: #888888;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.contacts .contacts__number {
+    color: #888888;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+}
+.contacts .contacts__list .contacts__items .contacts__links {
+    color: #888888;
 }
