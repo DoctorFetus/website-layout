@@ -4,6 +4,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+header {
+    position: relative;
+}
+
 nav {
     height: 50px;
     background: #212121;
@@ -12,7 +16,7 @@ nav {
 .menu {
     display: flex;
     justify-content: space-between;
-    padding: 13px 70px;
+    padding: 13px 80px;
     margin: 0;
     list-style: none;
 }
@@ -30,12 +34,16 @@ nav {
 }
 
 .subheader {
+    position: absolute;
     height: 84px;
-    background: rgba(0, 0, 0, .6)
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
 }
 
 .subheader .subheader__logo {
+    display: block;
     max-width: 100%;
+    margin-top: 16px;
 }
 
 .subheader .subheader__official {
@@ -43,4 +51,90 @@ nav {
     font-weight: 100;
     color: #ffffff;
     opacity: .5;
+    margin-top: 3px;
+}
+
+.subheader .subheader__connection {
+    margin-top: 16px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+}
+
+.subheader .subheader__number {
+    display: block;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.subheader .subheader__btn {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    width: 172px;
+    height: 46px;
+    margin-top: 19px;
+}
+
+.promo {
+    min-height: 800px;
+    background: url("../img/bg/uber_bg.png") center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+    z-index: 1;
+}
+
+.promo .promo__header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+.promo .promo__subheader {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.promo .promo__description {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 23px;
+}
+
+.promo .promo__btn {
+    display: block;
+    margin: 115px auto;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    font-weight: 400;
+    font-size: 18px;
 }
