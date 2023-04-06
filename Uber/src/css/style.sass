@@ -3,6 +3,11 @@
 $lightBlue: #1EACC7
 $lightRed:#FF5656
 
+@mixin btn_hover
+  &:hover
+    background-image: none
+    background-color: $lightBlue
+
 *
   font-family: "Roboto", sans-serif
 
@@ -23,13 +28,13 @@ nav
   margin: 0
   list-style: none
 
-  .menu__link
+  &__link
     color: #ffffff
     font-weight: 300
     font-size: 15px
     text-decoration: none
 
-  .menu__item
+  &__item
     border-right: 2px dotted black
     padding-right: 28px
 
@@ -42,26 +47,26 @@ header .subheader
   z-index: 1
 
 .subheader
-  .subheader__logo
+  &__logo
     display: block
     max-width: 100%
     margin-top: 16px
 
-  .subheader__official
+  &__official
     font-size: 13px
     font-weight: 100
     color: #ffffff
     opacity: .5
     margin-top: 3px
 
-  .subheader__connection
+  &__connection
     margin-top: 16px
     color: #FFFFFF
     font-weight: 300
     font-size: 12px
     text-align: right
 
-  .subheader__number
+  &__number
     display: block
     color: #FFFFFF
     font-weight: 400
@@ -69,7 +74,7 @@ header .subheader
     text-decoration: none
     text-align: right
 
-  .subheader__btn
+  &__btn
     font-weight: 400
     font-size: 14px
     text-transform: uppercase
@@ -82,6 +87,7 @@ header .subheader
     width: 172px
     height: 46px
     margin-top: 19px
+    @include btn_hover
 
 .promo
   min-height: 800px
@@ -89,7 +95,7 @@ header .subheader
   padding: 150px 0 135px 0
   z-index: 1
 
-  .promo__header
+  &__header
     text-transform: uppercase
     font-weight: 700
     font-size: 60px
@@ -98,7 +104,7 @@ header .subheader
     line-height: 60px
     margin-bottom: 0
 
-  .promo__subheader
+  &__subheader
     text-transform: uppercase
     font-weight: 700
     font-size: 36px
@@ -108,7 +114,7 @@ header .subheader
     margin-top: 10px
     margin-bottom: 0
 
-  .promo__description
+  &__description
     text-align: center
     color: #FFFFFF
     font-weight: 400
@@ -116,7 +122,7 @@ header .subheader
     line-height: 24px
     margin-top: 23px
 
-  .promo__btn
+  &__btn
     display: block
     margin: 115px auto
     width: 259px
@@ -130,6 +136,7 @@ header .subheader
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     font-weight: 400
     font-size: 18px
+    @include btn_hover
 
 /*.advantages {
 /*    display: flex;
@@ -196,7 +203,7 @@ header .subheader
     justify-content: center
     align-items: center
 
-  .advantages__descr
+  &__descr
     max-width: 371px
     font-style: normal
     font-weight: 300
@@ -205,7 +212,7 @@ header .subheader
     color: #202020
     align-items: center
 
-    .descr__header
+    &__header
       color: $lightBlue
       font-weight: 400
 
@@ -256,6 +263,26 @@ header .subheader
       margin: 0 auto
       padding: 6px
       cursor: pointer
+      &:before
+        content: ""
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $lightBlue
+        transition: 0.2s all
+      &:after
+        content: ""
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $lightBlue
+        transition: 0.2s all
+      &:hover
+        &:before, &:after
+          background-color: $lightRed
 
 
 .choice
@@ -271,3 +298,38 @@ header .subheader
     font-weight: 300
     font-size: 17px
     line-height: 24px
+.require
+  padding: 68px 0 23px 0
+  &__row
+    margin-top: 33px
+  &__block
+    margin-bottom: 61px
+  &__title
+    font-weight: 400
+    font-size: 22px
+    color: #1CA8C3
+  &__list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+
+  &__item
+    position: relative
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    margin-bottom: 10px
+    &:before
+      content: ""
+      display: block
+      left: -32px
+      top: 3px
+      position: absolute
+      width: 21px
+      height: 20px
+      background: url("../icons/check/check_blue 1.svg") center (center / cover) no-repeat
+  &__descr
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: $lightBlue
