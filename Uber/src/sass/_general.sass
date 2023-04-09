@@ -1,25 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap')
-
-$lightBlue: #1EACC7
-$lightRed:#FF5656
-
-@mixin btn_hover
-  &:hover
-    background-image: none
-    background-color: $lightBlue
-
-*
-  font-family: "Roboto", sans-serif
-
 header
   position: relative
   height: 50px
 
 nav
-  background: #212121
-  position: fixed
-  width: 100%
-  z-index: 2
+  //background: #212121
+  //position: fixed
+  //width: 100%
+  //z-index: 2
 
 .menu
   display: flex
@@ -27,6 +14,10 @@ nav
   padding: 13px 80px
   margin: 0
   list-style: none
+  background: #212121
+  position: fixed
+  width: 100%
+  z-index: 2
 
   &__link
     color: #ffffff
@@ -37,6 +28,8 @@ nav
   &__item
     border-right: 2px dotted black
     padding-right: 28px
+    &:last-child
+      border-right: none
 
 header .subheader
   margin-top: 50px
@@ -180,29 +173,27 @@ header .subheader
   color: black
 
 .advantages
-  margin-top: 18px
-  margin-bottom: 67px
 
   .row
-    max-width: 1267px
+    //max-width: 1267px
     margin: 0 auto
 
-.col-md-6
-  display: flex
-  margin-top: 25px
-
 .advantages
-  .circle
-    margin-top: 10px
-    margin-right: 25px
-    width: 116px
-    height: 116px
-    background: $lightBlue
-    border-radius: 100%
+  margin-top: 18px
+  margin-bottom: 67px
+  &__block
     display: flex
-    justify-content: center
-    align-items: center
-
+    margin-top: 25px
+    .circle
+      margin-top: 7px
+      margin-right: 25px
+      width: 116px
+      height: 116px
+      background: $lightBlue
+      border-radius: 100%
+      display: flex
+      justify-content: center
+      align-items: center
   &__descr
     max-width: 371px
     font-style: normal
@@ -211,10 +202,13 @@ header .subheader
     line-height: 21px
     color: #202020
     align-items: center
-
-    &__header
+    .descr__header
       color: $lightBlue
       font-weight: 400
+    .descr__text
+      font-weight: 300
+      font-size: 15px
+      line-height: 21px
 
 .mobile
   min-height: 864px
@@ -290,8 +284,10 @@ header .subheader
   background: url("../img/bg/split_bg.png") center (center / cover) no-repeat
   padding: 53px 0 130px 0
   &__img
+    //width: 60%
     display: block
     margin: 54px auto 0 auto
+    text-align: center
   &__descr
     margin: 0 auto
     text-align: center
@@ -426,11 +422,10 @@ footer
         text-transform: uppercase
     &_lang
       display: block
-      margin: 0 auto
+      margin: 19px auto 0 auto
       color: #1fbad6
       font-size: 11px
       font-weight: 400
-      margin-top: 19px
       text-transform: uppercase
       text-align: center
 

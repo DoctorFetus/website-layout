@@ -2,10 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uber 777</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
 <header>
@@ -28,11 +30,11 @@
                     <a href="#" class="subheader__logo"><img src="img/Uber.png" alt="logo"></a>
                     <div class="subheader__official">Официальный партнер Uber в Москве</div>
                 </div>
-                <div class="col-md-2 offset-md-2">
+                <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                     <div class="subheader__connection">Звоните нам ежедневно</div>
                     <a class="subheader__number" href="tel:+74957970988">8 495 797 09 88</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <button class="subheader__btn">заказать звонок</button>
                 </div>
             </div>
@@ -43,13 +45,13 @@
 <section class="promo">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 offset-md-1">
+            <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
                 <h1 class="promo__header">компания uber partners!</h1>
-                <h2 class="promo__subheader">пригашаем водителей! на своем авто!</h2>
+                <h2 class="promo__subheader">пригашаем водителей! На своем авто!</h2>
                 <div class="promo__description">
                     Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее место
                     среди таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у
-                    себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет
+                    себя в личном кабинете. Бонуcная система. Помимо выполненной работы по заказам, компания начисляет
                     бонусы за пиковое время. <br><br> Мы одни из партнеров и зарекомендовали себя как одна из лучших
                     команд в
                     городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
@@ -65,83 +67,112 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/wallet.png" alt="wallet" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Никаких наличных, оплата происходит автоматически</div>
-                    <div class="descr__text">Стоимость поездки оплачивается пассажиром с привязанной банковской карты,
-                        т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя,
-                        Вам не нужно искать мелкие деньги для размена.
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/wallet.png" alt="wallet" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Никаких наличных, оплата происходит автоматически</div>
+                        <div class="descr__text">Стоимость поездки оплачивается пассажиром с привязанной банковской
+                            карты,
+                            т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для
+                            водителя,
+                            Вам не нужно искать мелкие деньги для размена.
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/graf.png" alt="graf" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Комиссия 8% + БОНУСЫ</div>
-                    <div class="descr__text">У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку,
-                        некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители
-                        зарабатывают больше!
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/graf.png" alt="graf" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Комиссия 8% + БОНУСЫ</div>
+                        <div class="descr__text">У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку,
+                            некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители
+                            зарабатывают больше!
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/money.png" alt="money" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Высокий доход с гарантированными выплатами</div>
-                    <div class="descr__text">Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не
-                        нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и
-                        ведение банковского счета.
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/money.png" alt="money" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Высокий доход с гарантированными выплатами</div>
+                        <div class="descr__text">Мы выплачиваем заработную плату на личную банковскую карту водителя!
+                            Вам не
+                            нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские
+                            услуги и
+                            ведение банковского счета.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/calendar.png" alt="calendar" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Работа в удобное время, никаких графиков</div>
+                        <div class="descr__text">Вы просто нажимаете кнопку выйти на линию для начала работы, когда
+                            решите
+                            закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в
+                            выходные
+                            или
+                            праздничные дни!
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/calendar.png" alt="calendar" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Работа в удобное время, никаких графиков</div>
-                    <div class="descr__text">Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите
-                        закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные
-                        или
-                        праздничные дни!
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/keys.png" alt="keys" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Комфортное, прозрачное и простое подключение</div>
+                        <div class="descr__text">Мы подключаем дистанционно и бесплатно, Вам нет необходимости
+                            приезжать к
+                            нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для
+                            подключения,
+                            через 1-2 дня Вы можете начинать работать!
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/keys.png" alt="keys" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Комфортное, прозрачное и простое подключение</div>
-                    <div class="descr__text">Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к
-                        нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения,
-                        через 1-2 дня Вы можете начинать работать!
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/map.png" alt="map" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Всегда большое количество заказов</div>
+                        <div class="descr__text">Приложение показывает, где на данный момент больше всего заказов и
+                            где
+                            действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры
+                            всегда
+                            приятные и абсолютно неконфликтные люди, которых приятно возить.
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/map.png" alt="map" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Всегда большое количество заказов</div>
-                    <div class="descr__text">Приложение показывает, где на данный момент больше всего заказов и где
-                        действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда
-                        приятные и абсолютно неконфликтные люди, которых приятно возить.
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/support.png" alt="support" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Круглосуточная поддержка</div>
+                        <div class="descr__text">В Uber действует круглосуточная поддержка водителей по электронной
+                            почте.
+                            Если
+                            что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/support.png" alt="support" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Круглосуточная поддержка</div>
-                    <div class="descr__text">В Uber действует круглосуточная поддержка водителей по электронной почте.
-                        Если
-                        что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="circle"><img src="icons/reasons/car.png" alt="car" class="icon"></div>
-                <div class="advantages__descr">
-                    <div class="descr__header">Без шашечек и наклеек</div>
-                    <div class="descr__text">Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать
-                        его
-                        наклейками.
+                <div class="advantages__block">
+                    <div class="circle"><img src="icons/reasons/car.png" alt="car" class="icon"></div>
+                    <div class="advantages__descr">
+                        <div class="descr__header">Без шашечек и наклеек</div>
+                        <div class="descr__text">Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и
+                            обклеивать
+                            его
+                            наклейками.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,56 +305,56 @@
         <a href="#" class="world__cities">посмотреть все города</a>
     </div>
 </section>
-<footer>
-    <div class="footer_divider"></div>
-    <div class="footer_wrapper">
-        <div>
-            <div class="footer_social">
-                <a href="#" class="footer_social_item">
-                    <img src="icons/social/facebook.svg" alt="facebook">
-                </a>
-                <a href="#" class="footer_social_item">
-                    <img src="icons/social/twitter.svg" alt="twitter">
-                </a>
-                <a href="#" class="footer_social_item">
-                    <img src="icons/social/linkedin.svg" alt="linkedin">
-                </a>
-                <a href="#" class="footer_social_item">
-                    <img src="icons/social/instagram.svg" alt="instagram">
-                </a>
-            </div>
-        </div>
-        <div>
-            <div class="footer_links">
-                <div class="footer_links_main">
-                    <a href="#">на главную</a>
-                    <a href="#">города</a>
-                    <a href="#">для водителей</a>
-                </div>
-                <div class="footer_links_sub">
-                    <a href="#">центр поддержки</a>
-                    <a href="#">вакансии</a>
-                    <a href="#">разработчики</a>
-                    <a href="#">блог</a>
-                    <a href="#">о нас</a>
-                </div>
-                <a href="#" class="footer_links_lang">Русский</a>
-            </div>
-        </div>
-        <div>
-            <div class="footer_mobile">
-                <a href="#">
-                    <img src="icons/download/appstore.svg" alt="App Store">
-                </a>
-                <a href="#">
-                    <img class="google" src="icons/download/google.svg" alt="Google play">
-                </a>
-                <a href="#">
-                    <img src="icons/download/windows.png" alt="Windows store">
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
+<!--<footer>-->
+<!--    <div class="footer_divider"></div>-->
+<!--    <div class="footer_wrapper">-->
+<!--        <div>-->
+<!--            <div class="footer_social">-->
+<!--                <a href="#" class="footer_social_item">-->
+<!--                    <img src="icons/social/facebook.svg" alt="facebook">-->
+<!--                </a>-->
+<!--                <a href="#" class="footer_social_item">-->
+<!--                    <img src="icons/social/twitter.svg" alt="twitter">-->
+<!--                </a>-->
+<!--                <a href="#" class="footer_social_item">-->
+<!--                    <img src="icons/social/linkedin.svg" alt="linkedin">-->
+<!--                </a>-->
+<!--                <a href="#" class="footer_social_item">-->
+<!--                    <img src="icons/social/instagram.svg" alt="instagram">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div class="footer_links">-->
+<!--                <div class="footer_links_main">-->
+<!--                    <a href="#">на главную</a>-->
+<!--                    <a href="#">города</a>-->
+<!--                    <a href="#">для водителей</a>-->
+<!--                </div>-->
+<!--                <div class="footer_links_sub">-->
+<!--                    <a href="#">центр поддержки</a>-->
+<!--                    <a href="#">вакансии</a>-->
+<!--                    <a href="#">разработчики</a>-->
+<!--                    <a href="#">блог</a>-->
+<!--                    <a href="#">о нас</a>-->
+<!--                </div>-->
+<!--                <a href="#" class="footer_links_lang">Русский</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div class="footer_mobile">-->
+<!--                <a href="#">-->
+<!--                    <img src="icons/download/appstore.svg" alt="App Store">-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                    <img class="google" src="icons/download/google.svg" alt="Google play">-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                    <img src="icons/download/windows.png" alt="Windows store">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 </body>
 </html>
